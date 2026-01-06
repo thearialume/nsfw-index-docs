@@ -1,0 +1,7 @@
+[project]
+name = "nsfw-index-docs"
+version = "1.0.0"
+requires-python = ">=3.14"
+dependencies = [
+    "mkdocs-material>=9.7.1",
+]
