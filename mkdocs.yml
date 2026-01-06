@@ -1,7 +1,11 @@
 site_name: nsfw-index 
 site_url: https://nsfw-index.thearialume.com
+repo_name: thearialume/nsfw-index
+repo_url: https://github.com/thearialume/nsfw-index
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   palette:
     - scheme: slate
       primary: deep purple
@@ -15,3 +19,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
