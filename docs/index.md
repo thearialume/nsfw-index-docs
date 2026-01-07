@@ -15,6 +15,8 @@
 **✉️ Contact:** <a href="mailto:thearialume@gmail.com" target="_blank">thearialume@gmail.com</a>
 
 ---
+## Introduction
+
 **nsfw-index** is an open-source metadata indexing service for adult content. We aggregate, normalize, and index metadata from major platforms to provide developers, researchers, analysts, and anyone interested with free, ready-to-use data and unified query interface.
 
 !!! warning "Content Warning"
