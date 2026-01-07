@@ -7,18 +7,26 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.png
   palette:
-    - scheme: slate
+    - media: "(prefers-color-scheme)"
       primary: deep purple
       accent: pink
       toggle:
-        icon: material/brightness-4
+        icon: material/brightness-auto
         name: Switch to light mode
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: deep purple
       accent: pink
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 markdown_extensions:
   - admonition
   - pymdownx.details
