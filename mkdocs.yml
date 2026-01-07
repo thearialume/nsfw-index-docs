@@ -28,7 +28,7 @@ theme:
       accent: pink
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Switch to automatic mode
 markdown_extensions:
   - admonition
   - pymdownx.details
