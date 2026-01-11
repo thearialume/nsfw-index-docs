@@ -50,21 +50,51 @@ The documentation site is built with:
   👉 `nginx:stable-alpine`
 
 - 🚀 **Deployment platform:**  
-  👉 **Coolify**
+  👉 [Coolify](https://github.com/coollabsio/coolify)
+
+---
+
+## 🚀 Local Development
+
+Want to preview the docs locally?
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/thearialume/nsfw-index-docs.git
+cd nsfw-index-docs
+```
+
+1. **Install dependencies:**
+```bash
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+pip install mkdocs-material
+```
+
+1. **Run development server:**
+```bash
+mkdocs serve --livereload
+```
+
+1. **Open in browser:**
+```
+http://127.0.0.1:8000
+```
+
+Changes to `.md` files will auto-reload! ✨
 
 ---
 
 ## ⚙️ Build Process
 
-To build the documentation into static files, we use the following command:
-
+To build the documentation into static files for production:
 ```bash
 apk add --no-cache python3 py3-pip && \
 python3 -m venv .venv && \
 . .venv/bin/activate && \
 pip3 install mkdocs-material && \
 mkdocs build
-````
+```
 
 This generates a static site inside the `site/` directory, which is then served by **nginx**.
 
@@ -80,3 +110,11 @@ If you'd like to improve the documentation:
 * Improve structure or navigation
 
 You're very welcome to contribute via pull requests 💜
+
+---
+
+
+## License 
+
+**Code:** MIT  
+**Data:** CC-BY-SA 4.0
